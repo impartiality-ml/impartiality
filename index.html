@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Learning with Impartiality to Walk on the Pareto Frontier of Fairness, Privacy, and Utility</title>
+    <title>Impartiality Interactive Figure</title>
     <meta charset="utf-8">
-    <meta name="description" content="Figures">
+    <meta name="description" content="Impartiality Interactive Figures">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
     <script type="text/javascript" async
           src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
@@ -11,8 +11,12 @@
     <script src="https://cdn.plot.ly/plotly-2.18.0.min.js?"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script> 
-        // Add plotly-produced file paths here. Remember to choose a unique id for each Figure. Let's use the figure number from the paper.
         $(function(){
+        $("#figure2a").load("static/neurips_fig2.html"); 
+        $("#figure3a").load("static/celeba_pate_pre_None_pareto_surface.html"); 
+        $("#figure3b").load("static/chexpert_pate_pre_None_pareto_surface.html"); 
+        $("#figure4").load("static/utkface-fairface_pate_multidataset_None_pareto_surface.html"); 
+        $("#figure11").load("static/neurips_fig11.html"); 
         });
     </script> 
     <style>
@@ -24,4 +28,20 @@
 </head>
 
 <body>
+    <h1>Learning to Walk Impartially on the Pareto Frontier of Fairness, Privacy, and Utility</h1>
+
+    <h3>Figure 2(a): Achieved trade-off between privacy, fairness, utility, and coverage for FairPATE and PATE-S<sub>pre</sub></h3>
+    <div id="figure2a"> </div>
+
+    <h3>Figure 3(a): CelebA: FairPATE</h3>
+    <div id="figure3a"> </div>
+
+    <h3>Figure 3(b): CheXpert: FairPATE</h3>
+    <div id="figure3b"> </div>
+
+    <h3>Figure 4: UTKFace and FairFace: FairPATE</h3>
+    <div id="figure4"> </div>
+
+    <h3>Figure 11: FairPATE w/o IDP<sup>3</sup> with and without Calibration</h3>
+    <div id="figure11"></div>
 </body>
